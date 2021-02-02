@@ -25,6 +25,19 @@
         <h2>{{ cantidad >= 1000 ? 'Es mayor o igual a mil' : 'Es menor a mil' }}</h2>
         <a v-bind:href="enlaceYoutube" class="btn-block">Youtube</a>
         <a :href="enlaceYoutube">Youtube</a>
+
+        <hr>
+
+        <h2 v-if="estado">Cuenta activa</h2>
+        <h2 v-else>Cuenta desactivada</h2>
+
+        <hr>
+        <h2 v-if="cantidad > 500">Cantidad: {{ cantidad }}</h2>
+        <h2 v-else-if="cantidad <= 500 && cantidad > 0">
+            Cantidad:
+            <span class="text-danger"> {{ cantidad }} </span>
+        </h2>
+        <h2 v-else> Sin Cantidad: <span> {{ cantidad }}</span></h2>
     </div>
     <!-- End your project here-->
     <!-- jQuery -->
