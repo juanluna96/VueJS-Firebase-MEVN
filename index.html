@@ -47,6 +47,8 @@
 
         <button class="btn btn-link text-primary" @click='AumentarCantidad' type="button">Agregar saldo</button>
         <button class="btn btn-link text-danger" @click='DisminuirCantidad(500)' :disabled='desactivar' type="button">Restar saldo</button>
+
+        <footer-banco></footer-banco>
     </div>
     <!-- End your project here-->
     <!-- jQuery -->
@@ -60,6 +62,7 @@
     <!-- Your custom scripts (optional) -->
     <script src="https://unpkg.com/vue@next"></script>
     <script src="main.js"></script>
+    <script src="components/Footer.js"></script>
     <script>
         const MountedApp = app.mount('#app');
     </script>
