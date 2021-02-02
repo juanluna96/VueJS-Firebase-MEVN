@@ -38,6 +38,10 @@
             <span class="text-danger"> {{ cantidad }} </span>
         </h2>
         <h2 v-else> Sin Cantidad: <span> {{ cantidad }}</span></h2>
+        <hr>
+        <ul>
+            <li v-for="(servicio, index) in servicios" :key="index" class="text-capitalize">{{index + 1}} {{ servicio }}</li>
+        </ul>
     </div>
     <!-- End your project here-->
     <!-- jQuery -->

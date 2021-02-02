@@ -4,7 +4,8 @@ const app = Vue.createApp({
             titulo: 'Hola mundo con Vue.js v3',
             cantidad: 1500,
             enlaceYoutube: 'https://youtube.com/',
-            estado: true
+            estado: true,
+            servicios: ['transferencia', 'pagos', 'giros', 'cheques']
         }
     }
 });
