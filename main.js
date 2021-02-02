@@ -13,13 +13,13 @@ const app = Vue.createApp({
         AumentarCantidad() {
             this.cantidad = this.cantidad + 100;
         },
-        DisminuirCantidad() {
+        DisminuirCantidad(valor) {
             if (this.cantidad == 0) {
                 this.desactivar = true;
                 alert('Saldo en 0');
                 return
             }
-            this.cantidad = this.cantidad - 100;
+            this.cantidad = this.cantidad - valor;
         }
     }
 });
